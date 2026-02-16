@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 210 20% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 12%;
+
+    --primary: 168 60% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 93%;
+    --secondary-foreground: 210 20% 20%;
+
+    --muted: 210 15% 95%;
+    --muted-foreground: 210 10% 55%;
+
+    --accent: 168 50% 92%;
+    --accent-foreground: 168 60% 25%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 90%;
+    --input: 210 15% 90%;
+    --ring: 168 60% 40%;
+
+    --radius: 0.75rem;
+
+    /* Chat-specific tokens */
+    --sidebar-bg: 210 25% 8%;
+    --sidebar-fg: 210 15% 85%;
+    --sidebar-hover: 210 20% 14%;
+    --sidebar-active: 210 20% 16%;
+    --sidebar-muted: 210 15% 50%;
+    --sidebar-border: 210 20% 15%;
+
+    --bubble-sent: 168 55% 42%;
+    --bubble-sent-fg: 0 0% 100%;
+    --bubble-received: 0 0% 100%;
+    --bubble-received-fg: 210 20% 12%;
+
+    --chat-bg: 210 20% 95%;
+    --online: 142 70% 45%;
+    --recording: 0 72% 55%;
+    --unread: 168 60% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--border));
+    border-radius: 999px;
+  }
+}
