@@ -1,5 +1,7 @@
 # ChatSphere
 
+[![Live Demo](https://chat-application-frontend-opal.vercel.app/)
+
 ChatSphere is a modern, responsive chat application built with React, Vite, and Shadcn UI. It features real-time-like messaging, voice recording, file sharing, and emoji support.
 
 ## Setup Steps
@@ -24,7 +26,10 @@ To get started with ChatSphere locally:
     ```bash
     npm run build
     ```
-
+5.  **Clone this repo:**
+    ```bash
+    git clone https://github.com/Vedant804/chat-application-frontend.git
+    ```
 ## Component Structure
 
 The application is structured around a few key components in `src/components/chat`:
