@@ -2,10 +2,6 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://chat-application-frontend-opal.vercel.app/)
 
-## 🖥️ Preview
-
-![ChatSphere Interface](./chatsphere%20ui%20image%20.png)
-
 ChatSphere is a modern, responsive chat application built with React, Vite, and Shadcn UI. It features real-time-like messaging, voice recording, file sharing, and emoji support.
 
 ## Setup Steps
